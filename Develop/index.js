@@ -85,9 +85,10 @@ inquirer
       message: data[5],
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: data[6],
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
       },
       {
         type: 'input',
