@@ -47,9 +47,9 @@ ${test}
 
 ## Questions
 
-${github}
+GitHub: [Abimael1996](https://github.com/${github})
 
-${email}
+E-mail: [abimael.monarrez58@gmail.com](mailto:${email})
     `;
     
 inquirer
