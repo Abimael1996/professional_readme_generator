@@ -3,8 +3,8 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = ["Enter your project title", "Write a description of your project", "Describe the installation instructions", 
-                   "Write information about your project´s usage", "list the contribution guidelines", "Describe information about how to test your project", 
+const questions = ["Enter your project title", "Write a description of your project", "What command should be ran to install dependencies?", 
+                   "Write information about your project´s usage", "list the contribution guidelines", "What command should be ran to run tests?", 
                    "Choose a license for your application", "Enter your GitHub username", "Enter your e-mail address"];
 
 // TODO: Create a function to write README file
@@ -20,14 +20,15 @@ ${description}
     
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
     
     
 ## Installation
-    
-${installation}
+
+In order to install dependencies, run the following command: 
+
+    ${installation}
     
 ## Usage
     
@@ -42,8 +43,10 @@ ${license}
 ${contribution}
     
 ## Tests
-    
-${test}
+
+In order to run tests, run the following command: 
+
+    ${test}
 
 ## Questions
 
