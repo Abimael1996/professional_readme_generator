@@ -50,9 +50,7 @@ In order to run tests, run the following command:
 
 ## Questions
 
-GitHub: [Abimael1996](https://github.com/${github})
-
-E-mail: [abimael.monarrez58@gmail.com](mailto:${email})
+If you have any questions, open an issue or contact me directly at ${email}. You can find more of my work at [Abimael1996](https://github.com/${github}).
     `;
     
 inquirer
