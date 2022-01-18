@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = ["Enter your project title", "Write a description of your project", "What command should be ran to install dependencies?", 
@@ -9,49 +10,6 @@ const questions = ["Enter your project title", "Write a description of your proj
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const generateReadme = ({ title, description, installation, usage, contribution, test, license, github, email }) =>
-`# ${title}
-
-## Description
-    
-${description}
-    
-## Table of Contents (Optional)
-    
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Questions](#questions)
-    
-    
-## Installation
-
-In order to install dependencies, run the following command: 
-
-    ${installation}
-    
-## Usage
-    
-${usage}
-    
-## License
-    
-${license}
-    
-## How to Contribute
-    
-${contribution}
-    
-## Tests
-
-In order to run tests, run the following command: 
-
-    ${test}
-
-## Questions
-
-If you have any questions, open an issue or contact me directly at ${email}. You can find more of my work at [Abimael1996](https://github.com/${github}).
-    `;
     
 inquirer
   .prompt([
@@ -103,7 +61,7 @@ inquirer
       },
   ])
   .then((answers) => {
-    const readmePageContent = generateReadme(answers);
+    const readmePageContent = generateMarkdown(answers);
 
     fs.writeFile(fileName, readmePageContent, (err) =>
       err ? console.log(err) : console.log('Successfully created README file!')
@@ -119,4 +77,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
