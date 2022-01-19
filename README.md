@@ -4,7 +4,7 @@
     
 This application allows you to generate a README file from the command line by answering a series of questions.
     
-## Table of Contents (Optional)
+## Table of Contents
     
 - [Installation](#installation)
 - [Usage](#usage)
