@@ -18,7 +18,7 @@ In order to install dependencies, run the following command:
     
 ## Usage
     
-Clone the repository on your local computer and navigate to the folder in the command line, then run "node index." Answer the questions with the information you want on your README.
+Clone the repository on your local computer and navigate to the folder in the command line. Run npm i to install the dependencies and then run "node index." Answer the questions with the information you want on your README.
 
 Watch the Walkthrough [Video](https://watch.screencastify.com/v/boGxaqdIHz5gduGMMtKL)
 
